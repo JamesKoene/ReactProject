@@ -3,11 +3,16 @@ var PropTypes = require('prop-types');
 
 class Income extends React.Component{
 
-   
+constructor(props) {
+    super(props);
+    
+    this.handleClick = this.handleClick.bind(this);
+  }
+
    
 
-    handleClick () {
-
+    handleClick() {
+        this.props.Remove(this.props.id, this.props.value, this.props.number)
     }
 
 
