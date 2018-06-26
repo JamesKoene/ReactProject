@@ -11,7 +11,6 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader',
-        options: { presets: ['env'] }
       },
       {
         test:/\.(s*)css$/, 
@@ -19,7 +18,6 @@ module.exports = {
       }
     ]
   },
-  resolve: { extensions: ['*','.js', '.jsx'] },
   output: {
     publicPath: bundlePath,
     filename: "bundle.js"
